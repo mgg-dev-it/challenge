@@ -118,11 +118,11 @@ public class ChallengeFolderStructure {
 		cfs.createFolderLists();
 		System.out.println("load ...");
 		cfs.loadFolderListsIntoTree();
-		System.out.println("dump ...");
+		System.out.println("dump before eliminating ...");
 		cfs.dumpTheTree();
 		System.out.println("eliminate ...");
 		cfs.eliminateUnreachableFoldersFromTheTree();
-		System.out.println("dump ...");
+		System.out.println("dump after eliminating ...");
 		cfs.dumpTheTree();
 	}
 }
